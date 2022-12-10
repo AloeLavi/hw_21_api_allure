@@ -52,13 +52,13 @@ public class AllureTestopsTests {
         testCaseBody.setName(testCaseName);
 //        String testCaseBody = "{\"name\":\"Some random test\"}";
 
-        Step FirstStep = new Step();
-        FirstStep.setName("Шажочек1");
-        Step SecondStep = new Step();
-        SecondStep.setName("Шажочек2");
+        Step firstStep = new Step();
+        firstStep.setName("Шажочек1");
+        Step secondStep = new Step();
+        secondStep.setName("Шажочек2");
 
         CreateStepBody StepBody = new CreateStepBody();
-        StepBody.setSteps(List.of(FirstStep, SecondStep));
+        StepBody.setSteps(List.of(firstStep, secondStep));
 
         int testCaseId = given()
            //     .log().all()
